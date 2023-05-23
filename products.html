@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Proyecto Introducción Ingenieria</h1>
+
+  <div class="filter-container">
+    <button id="filter-size-button">Filtro por Medidas</button>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="search-title" placeholder="Buscar por Titulo">
+    <input type="text" id="search-description" placeholder="Buscar por Descripción">
+  </div>
+
+  <div class="filter-container">
+    <button class="filter-button" data-gender="">Todo</button>
+    <button class="filter-button" data-gender="Masculino">Masculino</button>
+    <button class="filter-button" data-gender="Femenino">Femenino</button>
+    <button class="filter-button" data-gender="Unisex">Unisex</button>
+  </div>
+  
+
+  <div class="product-list">
+    <!-- Product elements will be dynamically added here -->
+  </div>
+
+  <script src="mockData.js" type="module"></script>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
